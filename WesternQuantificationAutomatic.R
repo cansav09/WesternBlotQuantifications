@@ -1,24 +1,24 @@
 
-####### Objective: Quantify multiple western blots
-####### Author: Candace Savonen
-####### Last Update: 11-10-17
+#Objective: Quantify multiple western blots
+#Author: Candace Savonen
+#Last Update: 11-10-17
 
-####### Input needed:
-############# A "gel set up file" that contains the labels treatment groups, and amounts of lysate pipetted in micrograms in the order that the data are in. 
-############# A Quantification file that contains the quantification data output from ImageJ program with the a corresponding background signal for each taken above or below the sample. 
-############# A REVERT quantification file that contains the quantification data output from ImageJ program in the same order as the gel set up and quantification file. 
+#Input needed:
+# 1. A "gel set up file" that contains the labels treatment groups, and amounts of lysate pipetted in micrograms in the order that the data are in. 
+# 2. A Quantification file that contains the quantification data output from ImageJ program with the a corresponding background signal for each taken above or below the sample. 
+# 3. A REVERT quantification file that contains the quantification data output from ImageJ program in the same order as the gel set up and quantification file. 
 
-####### Output created:
-############# An ANOVA results file
-############# A posthoc analysis file
-############# A standard curve graph
-############# A bar plot across groups 
-############# A boxplot across groups
+#Output created:
+# 1. An ANOVA results file
+# 2. A posthoc analysis file
+# 3. A standard curve graph
+# 4. A bar plot across groups 
+# 5. A boxplot across groups
 
-####### About the data analysis: 
-####### The boxplots and bar plots are made off of standardized data using regression on Total Quantities - an obtained Background signal taken above the signal box. 
-####### These estimated values from regression are then divided REVERT. 
-####### This script also conducts an outlier test and removes any values that have a absolute value of Z-score (Within their group) greater than the 1.93 (This is according to grubbs test for n=18 and will need to be adjusted depending on the sample size)
+# About the data analysis: 
+# The boxplots and bar plots are made off of standardized data using regression on Total Quantities - an obtained Background signal taken above the signal box. 
+# These estimated values from regression are then divided REVERT. 
+# This script also conducts an outlier test and removes any values that have a absolute value of Z-score (Within their group) greater than the 1.93 (This is according to grubbs test for n=18 and will need to be adjusted depending on the sample size)
 
 
 
